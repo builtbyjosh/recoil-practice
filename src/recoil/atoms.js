@@ -1,4 +1,4 @@
-import { atom } from "recoil";
+import { atom } from 'recoil';
 
 export const textState = atom({
   key: 'textState',
@@ -7,5 +7,10 @@ export const textState = atom({
 
 export const todoListState = atom({
   key: 'TodoList',
-  default: []
-})
+  default: [],
+});
+
+export const todoListFilterState = atom({
+  key: 'TodoListFilter',
+  default: 'Show All',
+});
